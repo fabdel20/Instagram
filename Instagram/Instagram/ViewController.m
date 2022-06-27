@@ -32,6 +32,10 @@
             NSLog(@"User logged in successfully");
             
             // display view controller that needs to shown after successful login
+            /*
+             if the login is succesful - send them to the home page
+             if it is not suceful, redirect them to another page or error out - idk look at what insta actually does 
+             */
         }
     }];
 }

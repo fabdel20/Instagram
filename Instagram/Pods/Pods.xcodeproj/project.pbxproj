@@ -734,7 +734,7 @@
 		9A940A3143644A9B6ED4F7D923211252 /* PFPushPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPushPrivate.h; path = Parse/Parse/Internal/Push/PFPushPrivate.h; sourceTree = "<group>"; };
 		9C52EC20EDEA98FC3FAC76695BA376A8 /* PFAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFAlertView.m; path = Parse/Parse/Internal/PFAlertView.m; sourceTree = "<group>"; };
 		9D7F7A3063362CA8BC0408CF296D1D76 /* PFURLSessionUploadTaskDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFURLSessionUploadTaskDelegate.m; path = Parse/Parse/Internal/Commands/CommandRunner/URLSession/Session/TaskDelegate/PFURLSessionUploadTaskDelegate.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DDECA9B4DA5841DA6B6E9A9E297BC5B /* PFObjectFileCodingLogic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFObjectFileCodingLogic.h; path = Parse/Parse/Internal/Object/Coder/File/PFObjectFileCodingLogic.h; sourceTree = "<group>"; };
 		9DEC42158DBA2BC00196D85190C4259F /* PFObjectSubclassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFObjectSubclassInfo.m; path = Parse/Parse/Internal/Object/Subclassing/PFObjectSubclassInfo.m; sourceTree = "<group>"; };
 		9E3B312ABD42E6DF1D8FBB9FDBD143CD /* PFPinningObjectStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFPinningObjectStore.m; path = Parse/Parse/Internal/Object/PinningStore/PFPinningObjectStore.m; sourceTree = "<group>"; };
@@ -882,7 +882,7 @@
 		FBCFFA439C3F3F9E1C0C7F524165F349 /* PFJSONSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFJSONSerialization.h; path = Parse/Parse/Internal/PFJSONSerialization.h; sourceTree = "<group>"; };
 		FC3933BB9FCD34C04EAD0AE169008DBD /* PFQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFQuery.h; path = Parse/Parse/PFQuery.h; sourceTree = "<group>"; };
 		FE9996810D3BCCEA0DD5042FB8AC9721 /* PFHTTPURLRequestConstructor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFHTTPURLRequestConstructor.h; path = Parse/Parse/Internal/HTTPRequest/PFHTTPURLRequestConstructor.h; sourceTree = "<group>"; };
-		FEC0F0510BD4C02AB4CBC6F8CE388DD2 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = Parse/Parse/Resources/en.lproj; sourceTree = "<group>"; };
+		FEC0F0510BD4C02AB4CBC6F8CE388DD2 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = Parse/Parse/Resources/en.lproj; sourceTree = "<group>"; };
 		FF42383BAB1CEF6F050DB4473FACAFE9 /* PFSQLiteStatement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFSQLiteStatement.h; path = Parse/Parse/Internal/LocalDataStore/SQLite/PFSQLiteStatement.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1010,7 +1010,6 @@
 				5D5CDD1259024F1994653BD487B90DF8 /* Support Files */,
 				117E7F881FD450A6B11294BB182F41A0 /* Tasks */,
 			);
-			name = Bolts;
 			path = Bolts;
 			sourceTree = "<group>";
 		};
@@ -1046,7 +1045,6 @@
 				9674DA25688C7D45B5C8AD560184EA10 /* Core */,
 				26B3C1DC59A20A17F965A2B57152D74C /* Support Files */,
 			);
-			name = Parse;
 			path = Parse;
 			sourceTree = "<group>";
 		};
