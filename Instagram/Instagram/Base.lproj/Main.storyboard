@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Instagram Logo" translatesAutoresizingMaskIntoConstraints="NO" id="o7O-Gt-uTs">
@@ -180,10 +180,6 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Sign up">
                                     <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="signUp:" destination="8vt-rN-CVB" eventType="touchUpInside" id="fvD-h4-0Qt"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="QtD-f5-7eh"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By signing up, you agree to our" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpw-NP-IT7">
                                 <rect key="frame" x="89" y="630" width="236" height="20"/>

@@ -18,12 +18,6 @@
 @end
 
 @implementation SignUpViewController
-- (IBAction)signUp:(id)sender {
-    if((self.filled == YES)){
-        // if its touched and was signed up succesfully then you can leave the signup screen
-    }
-    
-}
 
 
 - (void)viewDidLoad {
@@ -62,7 +56,7 @@
             NSLog(@"User registered successfully");
             
             // manually segue to logged in view
-            self.filled = YES;
+            
             
             
         }
