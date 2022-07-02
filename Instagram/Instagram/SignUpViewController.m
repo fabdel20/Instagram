@@ -7,7 +7,6 @@
 
 #import "SignUpViewController.h"
 #import "Parse/Parse.h"
-#import "HomeViewController.h"
 #import "ViewController.h"
 @interface SignUpViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *emailField;

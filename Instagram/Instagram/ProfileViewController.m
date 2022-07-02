@@ -1,18 +1,17 @@
 //
-//  HomeViewController.m
+//  ProfileViewController.m
 //  Instagram
 //
-//  Created by Farida Abdelmoneum on 6/27/22.
+//  Created by Farida Abdelmoneum on 7/2/22.
 //
 
-#import "HomeViewController.h"
+#import "ProfileViewController.h"
 
-@interface HomeViewController () <UITextViewDelegate>
-
+@interface ProfileViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation ProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
