@@ -7,7 +7,8 @@
 
 #import "SignUpViewController.h"
 #import "Parse/Parse.h"
-
+#import "HomeViewController.h"
+#import "ViewController.h"
 @interface SignUpViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
@@ -27,14 +28,22 @@
     
 }
 
-
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if([[segue identifier] isEqualToString:@"signUpSegue"]){
+            UINavigationController *navigationController = [segue destinationViewController];
+            ViewController *homeController = (ViewController*)navigationController.topViewController;
+            //homeController.delegate = self;
+        }
+    
 }
+*/
+
 
 
 - (void)registerUser {
@@ -52,11 +61,12 @@
         if (error != nil) {
             self.filled = NO;
             NSLog(@"Error: %@", error.localizedDescription);
+            [self performSegueWithIdentifier:@"NSIgnUpSEgue" sender:self];
         } else {
             NSLog(@"User registered successfully");
             
             // manually segue to logged in view
-            
+            [self performSegueWithIdentifier:@"signUpSegue" sender:self];
             
             
         }

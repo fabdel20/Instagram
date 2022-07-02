@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Instagram Logo" translatesAutoresizingMaskIntoConstraints="NO" id="o7O-Gt-uTs">
@@ -69,7 +69,7 @@
                                     <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="8vt-rN-CVB" kind="presentation" id="gsV-Rx-KO8"/>
+                                    <segue destination="GTZ-PU-jdi" kind="presentation" id="zHy-bt-ae3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk6-fK-xv7">
@@ -102,10 +102,11 @@
                         <viewLayoutGuide key="safeArea" id="C9v-EX-ak3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aAq-MV-zAD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KxC-3f-o2K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1109" y="85"/>
+            <point key="canvasLocation" x="3768.115942028986" y="81.696428571428569"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="5w7-0S-zfn">
@@ -180,6 +181,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Sign up">
                                     <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="signUpSegue" id="Ooq-Pj-7Bl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By signing up, you agree to our" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpw-NP-IT7">
                                 <rect key="frame" x="89" y="630" width="236" height="20"/>
@@ -199,6 +203,7 @@
                         <viewLayoutGuide key="safeArea" id="E3Y-Ab-sAv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qgm-1m-dSt"/>
                     <connections>
                         <outlet property="emailField" destination="HYc-PK-kGB" id="RMW-NJ-u2c"/>
                         <outlet property="fullnameField" destination="ycB-ck-oZk" id="605-fg-kkK"/>
@@ -208,7 +213,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOH-j9-oWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1900.0000000000002" y="866.51785714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wK5-fn-dS4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GTZ-PU-jdi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aQb-HF-B0w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8vt-rN-CVB" kind="relationship" relationship="rootViewController" id="iA6-uH-zt2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhj-Y8-Oml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="989.85507246376824" y="866.51785714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xhf-Xc-ZPI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xtL-Au-fZO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8TO-Uz-HTu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Jx-4n-3sg" kind="relationship" relationship="rootViewController" id="GGw-aT-aV5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTq-tW-cFw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2857.971014492754" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>

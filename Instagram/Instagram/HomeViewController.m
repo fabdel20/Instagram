@@ -7,7 +7,8 @@
 
 #import "HomeViewController.h"
 
-@interface HomeViewController ()
+@interface HomeViewController () <UITextViewDelegate>
+
 
 @end
 

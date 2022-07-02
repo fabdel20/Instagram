@@ -461,6 +461,8 @@
 /* Begin PBXFileReference section */
 		00A58C670020A7F70B4ECF8A1D0A0BD0 /* PFFileObject+Synchronous.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PFFileObject+Synchronous.h"; path = "Parse/Parse/PFFileObject+Synchronous.h"; sourceTree = "<group>"; };
 		00A5D936FBEF85D2551238BB5B4D6BA3 /* PFFileObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFFileObject.m; path = Parse/Parse/PFFileObject.m; sourceTree = "<group>"; };
+		010F4252286B8B37006D101E /* fakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fakeViewController.h; path = ../Instagram/fakeViewController.h; sourceTree = "<group>"; };
+		010F4253286B8B37006D101E /* fakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = fakeViewController.m; path = ../Instagram/fakeViewController.m; sourceTree = "<group>"; };
 		015DF302C63B158BB0F73AB03E349EEF /* PFMultiProcessFileLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFMultiProcessFileLock.m; path = Parse/Parse/Internal/MultiProcessLock/PFMultiProcessFileLock.m; sourceTree = "<group>"; };
 		01B34DF49D72587E9BC8E7FAAF37747D /* PFThreadsafety.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFThreadsafety.h; path = Parse/Parse/Internal/ThreadSafety/PFThreadsafety.h; sourceTree = "<group>"; };
 		023E3E924870D4E88C8F6C12CC492663 /* PFRESTUserCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFRESTUserCommand.m; path = Parse/Parse/Internal/Commands/PFRESTUserCommand.m; sourceTree = "<group>"; };
@@ -1457,6 +1459,8 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
+				010F4252286B8B37006D101E /* fakeViewController.h */,
+				010F4253286B8B37006D101E /* fakeViewController.m */,
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				B3B45DA2ABF2D590B7E415D085D7B481 /* Pods */,
