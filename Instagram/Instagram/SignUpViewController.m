@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) IBOutlet UITextField *fullnameField;
 @property (nonatomic) BOOL filled;
+- (IBAction)signUpButton:(id)sender;
 
 @end
 
@@ -46,31 +47,32 @@
 
 
 
-- (void)registerUser {
-    // initialize a user object
-    PFUser *newUser = [PFUser user];
+  
+
+- (IBAction)signUpButton:(id)sender {
+    if([self.usernameField.text isEqual:@""] || [self.passwordField.text isEqual:@""]){
+        [self showAlert];
+    }else{
+        PFUser *newUser = [PFUser user];
+        
+        newUser.username = self.usernameField.text;
+        newUser.password = self.passwordField.text;
+        
+        [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
+            if(error != nil){
+            }else{
+                [self performSegueWithIdentifier:@"signUpSegue" sender:nil];
+            }
+        }];
+    }
+}
+
+-(void)showAlert{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Missing Field(s)" message:@"Enter a username and password" preferredStyle:(UIAlertControllerStyleAlert)];
+    UIAlertAction *tryAgain = [UIAlertAction actionWithTitle:@"Try Again" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {}];
+    [alert addAction:tryAgain];
+    [self presentViewController:alert animated:YES completion:^{}];
     
-    // set user properties
-    newUser.username = self.usernameField.text;
-    newUser.email = self.emailField.text;
-    newUser.password = self.passwordField.text;
-    
-    //newUser.name = self.fullnameField.text;
-    // call sign up function on the object
-    [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
-        if (error != nil) {
-            self.filled = NO;
-            NSLog(@"Error: %@", error.localizedDescription);
-            [self performSegueWithIdentifier:@"NSIgnUpSEgue" sender:self];
-        } else {
-            NSLog(@"User registered successfully");
-            
-            // manually segue to logged in view
-            [self performSegueWithIdentifier:@"signUpSegue" sender:self];
-            
-            
-        }
-    }];
 }
 
 @end

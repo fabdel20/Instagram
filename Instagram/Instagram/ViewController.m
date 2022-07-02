@@ -9,9 +9,11 @@
 #import "AppDelegate.h"
 #import "Parse/Parse.h"
 #import "HomeViewController.h"
-@interface ViewController () <HomeViewControllerDelegate,UITableViewDelegate,UIScrollViewDelegate>
+
+@interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
+- (IBAction)logInButton:(id)sender;
 
 @end
 
@@ -49,9 +51,32 @@
              if the login is succesful - send them to the home page
              if it is not suceful, redirect them to another page or error out - idk look at what insta actually does 
              */
-            [self performSegueWithIdentifier:@"logInSegue" sender:self];
         }
     }];
 }
 
+- (IBAction)logInButton:(id)sender {
+    NSString *username = self.usernameField.text;
+    NSString *password = self.passwordField.text;
+    
+    if([username isEqual:@""] || [password isEqual:@""]){
+        [self showAlert];
+    }else{
+        [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser * user, NSError * error) {
+            if(error != nil){
+                
+            }else{
+                [self performSegueWithIdentifier:@"logInSegue" sender:nil];
+            }
+        }];
+    }
+}
+
+-(void)showAlert{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Missing Field(s)" message:@"Enter a username and password" preferredStyle:(UIAlertControllerStyleAlert)];
+    UIAlertAction *tryAgain = [UIAlertAction actionWithTitle:@"Try Again" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {}];
+    [alert addAction:tryAgain];
+    [self presentViewController:alert animated:YES completion:^{}];
+    
+}
 @end
