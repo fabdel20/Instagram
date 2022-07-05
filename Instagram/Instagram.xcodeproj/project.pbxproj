@@ -24,6 +24,8 @@
 		010F42622870FEB7006D101E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F42612870FEB7006D101E /* ProfileViewController.m */; };
 		010F426528710148006D101E /* collectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F426428710148006D101E /* collectionViewCell.m */; };
 		010F42682871046A006D101E /* ProfilePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F42672871046A006D101E /* ProfilePhotoViewController.m */; };
+		010F42B22874F14F006D101E /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F42B12874F14F006D101E /* DetailsViewController.m */; };
+		010F42B52874F77B006D101E /* InstaViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F42B42874F77B006D101E /* InstaViewCell.m */; };
 		2CCE8B34D2E6BB322C5E5BCC /* libPods-InstagramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D416AF44D6042D0808C856 /* libPods-InstagramTests.a */; };
 		F074D098D5A016AA1085CFD7 /* libPods-Instagram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AA86D30E4D81B5182AE5E1 /* libPods-Instagram.a */; };
 		F2D4ABC3A7CB8E9A59ABA0B8 /* libPods-Instagram-InstagramUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6D63BC63CBC0A99E9D444A /* libPods-Instagram-InstagramUITests.a */; };
@@ -78,6 +80,10 @@
 		010F426428710148006D101E /* collectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = collectionViewCell.m; sourceTree = "<group>"; };
 		010F42662871046A006D101E /* ProfilePhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfilePhotoViewController.h; sourceTree = "<group>"; };
 		010F42672871046A006D101E /* ProfilePhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfilePhotoViewController.m; sourceTree = "<group>"; };
+		010F42B02874F14F006D101E /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		010F42B12874F14F006D101E /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		010F42B32874F77B006D101E /* InstaViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaViewCell.h; sourceTree = "<group>"; };
+		010F42B42874F77B006D101E /* InstaViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaViewCell.m; sourceTree = "<group>"; };
 		37F96F2E62604245A35608CE /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		4B081C27467514B0DB272DBD /* Pods-Instagram-InstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-InstagramUITests.release.xcconfig"; path = "Target Support Files/Pods-Instagram-InstagramUITests/Pods-Instagram-InstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8B6D63BC63CBC0A99E9D444A /* libPods-Instagram-InstagramUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Instagram-InstagramUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +148,8 @@
 		010F4212286A2522006D101E /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				010F42B32874F77B006D101E /* InstaViewCell.h */,
+				010F42B42874F77B006D101E /* InstaViewCell.m */,
 				010F4213286A2522006D101E /* AppDelegate.h */,
 				010F4214286A2522006D101E /* AppDelegate.m */,
 				010F4216286A2522006D101E /* SceneDelegate.h */,
@@ -149,6 +157,8 @@
 				010F4219286A2522006D101E /* ViewController.h */,
 				010F421A286A2522006D101E /* ViewController.m */,
 				010F421C286A2522006D101E /* Main.storyboard */,
+				010F42B02874F14F006D101E /* DetailsViewController.h */,
+				010F42B12874F14F006D101E /* DetailsViewController.m */,
 				010F42602870FEB7006D101E /* ProfileViewController.h */,
 				010F42612870FEB7006D101E /* ProfileViewController.m */,
 				010F42662871046A006D101E /* ProfilePhotoViewController.h */,
@@ -452,8 +462,10 @@
 				010F421B286A2522006D101E /* ViewController.m in Sources */,
 				010F42622870FEB7006D101E /* ProfileViewController.m in Sources */,
 				010F4215286A2522006D101E /* AppDelegate.m in Sources */,
+				010F42B22874F14F006D101E /* DetailsViewController.m in Sources */,
 				010F42592870F1D5006D101E /* PostPhotoViewController.m in Sources */,
 				010F4251286A6C78006D101E /* SignUpViewController.m in Sources */,
+				010F42B52874F77B006D101E /* InstaViewCell.m in Sources */,
 				010F4226286A2524006D101E /* main.m in Sources */,
 				010F426528710148006D101E /* collectionViewCell.m in Sources */,
 				010F42562870EE69006D101E /* FeedViewController.m in Sources */,

@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
 //  Instagram
-//
 //  Created by Farida Abdelmoneum on 6/27/22.
 //
 
 #import "AppDelegate.h"
 #import "Parse/Parse.h"
+#import "Parse.h"
+
 @interface AppDelegate ()
 
 @end

@@ -8,9 +8,13 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@protocol PhotoViewControllerDelegate <NSObject>
 
-@interface PostPhotoViewController : UIViewController
+-(void)didChooseProfileImage:(UIImageView *) imageView;
 
+@end
+@interface PostPhotoViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property (nonatomic, weak) id<PhotoViewControllerDelegate> delegate;
 @end
 
 NS_ASSUME_NONNULL_END
